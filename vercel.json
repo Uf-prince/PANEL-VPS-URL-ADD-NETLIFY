@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/:path*",
-      "destination": "http://node8.xzyx.qzz.io:23469/:path*"
-    }
-  ]
-}

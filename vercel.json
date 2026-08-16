@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/api/:path*", "destination": "http://node8.xzyx.qzz.io:23469:path*" }
+    { "source": "/api/:path*", "destination": "http://node8.xzyx.qzz.io:23469/:path*" }
   ]
 }

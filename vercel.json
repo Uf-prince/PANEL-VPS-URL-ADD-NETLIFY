@@ -1,5 +1,24 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
-    { "source": "/api/:path*", "destination": "http://node8.xzyx.qzz.io:23469/:path*" }
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/:path((?!index\\.html$|favicon\\.ico$).*)",
+      "destination": "/api/proxy"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/:path*",
+      "headers": [
+        {
+          "key": "x-vercel-enable-rewrite-caching",
+          "value": "0"
+        }
+      ]
+    }
   ]
 }

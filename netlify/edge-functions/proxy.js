@@ -1,7 +1,7 @@
 // Netlify Edge Function - reverse proxy to the VPS backend
 // Converted from the original Vercel api/index.js (Node http/https proxy)
 
-const TARGET = "http://node8.xzyx.qzz.io:23469/";
+const TARGET = "http://node8.xzyx.qzz.io:23469";
 
 export default async (request, context) => {
   const url = new URL(request.url);

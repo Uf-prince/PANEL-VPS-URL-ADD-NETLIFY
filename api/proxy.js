@@ -11,7 +11,7 @@
 // Root / bhi backend ke / par jata hai — koi path chhupti nahi.
 // Method, headers, body, query — sab forward hota hai.
 
-const BACKEND = "http://node12.xzyx.qzz.io:25604";
+const BACKEND = "http://node12.xzyx.qzz.io:25605";
 
 // HOP-BY-HOP headers — inhe forward nahi karna (HTTP spec)
 const HOP_BY_HOP = new Set([
